@@ -1,0 +1,34 @@
+npm install --save @nestjs/sequelize sequelize sequelize-typescript
+npm install --save pg pg-hstore
+npm install --save-dev @types/sequelize
+nest generate module users --no-spec
+nest generate controller users --no-spec
+nest generate service users --no-spec
+npm install @nestjs/config
+npm install cross-env
+npm install @nestjs/swagger swagger-ui-express
+
+nest generate module roles --no-spec
+nest generate controller roles --no-spec
+nest generate service roles --no-spec
+
+nest generate module auth --no-spec
+nest generate controller auth --no-spec
+nest generate service auth --no-spec
+
+npm install @nestjs/jwt bcryptjs
+npm install class-validator class-transformer
+
+nest generate module posts --no-spec
+nest generate controller posts --no-spec
+nest generate service posts --no-spec
+
+nest generate module files --no-spec
+nest generate service files --no-spec
+
+npm install uuid
+npm install --save @nestjs/serve-static
+
+nest generate module topics --no-spec
+nest generate controller topics --no-spec
+nest generate service topics --no-spec
